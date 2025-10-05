@@ -11,12 +11,12 @@ docker pull deepmi/fastsurfer:latest
 sudo usermod -aG docker $USER
 ```
 
-install [TriALS](https://github.com/tctco/TriALS)
+clone this repo:
+
 ```bash
-uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-cd TriALS
-uv pip install -e .
+git clone --recurse-submodules https://github.com/tctco/ISICDM25HippoChallenge.git
 ```
+
 
 sync env
 
@@ -24,11 +24,20 @@ sync env
 uv sync
 ```
 
+install [TriALS](https://github.com/tctco/TriALS)
+```bash
+uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+cd TriALS
+uv pip install -e .
+```
+
 ## prepare the ISICDM25 dataset
 
 unzip the data to `project/path/ISICDM_dataset`.
 
 > SiteA images should be renamed with extension `.nii` first.
+> 
+> SiteA contains some mis-labeled images: s1_label34, s1_label64, s1_label84
 
 ## run the segmentation pipeline
 
@@ -40,3 +49,6 @@ sh pipeline.sh
 
 - Dice: 0.9065
 - HD95: 1.9499
+
+
+<p align="center"><img src="/tctco/DCCCSlicer/raw/master/demo/dept_logo.png" style="width:15%;" /></p>
