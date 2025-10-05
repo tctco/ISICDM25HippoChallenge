@@ -26,7 +26,8 @@ uv sync
 
 install [TriALS](https://github.com/tctco/TriALS)
 ```bash
-uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# you likely don't need to install torch, as uv sync has already handled this for you
+# uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 cd TriALS
 uv pip install -e .
 ```
