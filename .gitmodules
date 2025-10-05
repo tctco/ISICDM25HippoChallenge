@@ -1,0 +1,3 @@
+[submodule "TriALS"]
+	path = TriALS
+	url = https://github.com/tctco/TriALS
