@@ -52,4 +52,4 @@ sh pipeline.sh
 - HD95: 1.9499
 
 
-<p align="center"><img src="/tctco/DCCCSlicer/raw/master/demo/dept_logo.png" style="width:15%;" /></p>
+<p align="center"><img src="https://github.com/tctco/DCCCSlicer/blob/master/demo/dept_logo.png" style="width:15%;" /></p>
