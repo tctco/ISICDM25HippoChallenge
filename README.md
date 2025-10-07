@@ -1,6 +1,12 @@
 # ISICDM25 multi-site Hippocampus segmentation challenge
 
-## prerequisites
+## Prerequisites
+
+System info: 
+- Ubuntu 24.04.3 LTS
+- AMD Ryzen 9 7950X3D
+- 64GB RAM
+- NVIDIA 4090D 24GB
 
 install [fastsurfur](https://github.com/Deep-MI/FastSurfer/blob/dev/doc/overview/INSTALL.md#docker) in docker
 
@@ -32,7 +38,7 @@ cd TriALS
 uv pip install -e .
 ```
 
-## prepare the ISICDM25 dataset
+## Prepare the ISICDM25 dataset
 
 unzip the data to `project/path/ISICDM_dataset`.
 
@@ -40,13 +46,13 @@ unzip the data to `project/path/ISICDM_dataset`.
 > 
 > SiteA contains some mis-labeled images: s1_label34, s1_label64, s1_label84
 
-## run the segmentation pipeline
+## Run the segmentation pipeline
 
 ```bash
 sh pipeline.sh
 ```
 
-## test result
+## Test result
 
 - Dice: 0.9065
 - HD95: 1.9499
