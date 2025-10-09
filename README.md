@@ -49,7 +49,9 @@ unzip the data to `project/path/ISICDM_dataset`.
 ## Run the segmentation pipeline
 
 ```bash
-sh pipeline.sh
+sh pipeline.sh 
+# remove `--demo` flag for nnunetv2_start.py script in this bash script if you wish to run the code seriously
+# otherwise, nnunet will train only 1 epoch per fold
 ```
 
 ## Test result
